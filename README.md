@@ -17,6 +17,8 @@ Ao realizar um envio, este será o objeto que você irá receber como resposta. 
 
 OBS: Parâmetros devem ser codificados em UTF-8.
 
+________________________________________________________________________
+
 *** Parâmetros a serem enviados ***
 
 [ Parâmetro ] - Obs.
