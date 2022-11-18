@@ -52,8 +52,10 @@ anexoContent (arquivo codificado em base64 / Data URI) - Opcional
 anexoFileName (nome do arquivo a ser enviado) - Opcional
 
 anexoType (tipo Mime do arquivo a ser anexado. ex: image/jpeg) - Opcional
+________________________________________________________________________
 
 Atenção: Os dados devem ser passados via POST, codificados em JSON. Não esqueça de passar o header Content-Type: application/json
+________________________________________________________________________
 
 Exemplo de retorno em JSON:
 
@@ -65,11 +67,15 @@ Quando ocorrer erro no envio, retornará o erro:
 
 { "status": "ERRO", "codigo": "204", "criptokey": "f87e7bf77c609d9537e146fb32d88418", "to": "seunome@seuemail.com" }
 
+________________________________________________________________________
+
 Caso a API retorne o erro “FALTAM PARAMETROS”, ex:
 
 {"status":"ERRO: FALTAM PARAMETROS","codigo":"208"}
 
 Isso quer dizer que um ou mais parâmetros não foram passados corretamente via POST e codificados em JSON.
+
+________________________________________________________________________
 
 As mensagens enviadas com sucesso são registradas automaticamente no relatório de envios, com atualização aprox. a cada 15 minutos.
 
@@ -86,6 +92,8 @@ A primeira coisa que você deve saber é o endpoint que usamos: https://api.xmai
 OBS: Também é possível usar o protocolo http caso prefira.
 
 Os parâmetros devem ser passados em POST, codificados em JSON.
+
+________________________________________________________________________
 
 Parâmetros a serem enviados
 
@@ -109,17 +117,25 @@ emaildestino (email para onde a mensagem foi enviada - caso queira pesquisar ema
 
 remetente (email utilizado como remetente do envio - caso queira pesquisar emails enviados por um determinado remetente) - Opcional
 
+________________________________________________________________________
+
 Exemplo de chamada em JSON:
 
 Substitua os valores conforme os dados da sua conta e período desejado para consulta. { "usuario_smtp": "smtp1@seudominio.com.br", "senha_smtp": "xxxxxxxx", "dataini": "2019-02-01", "horaini": "00:01", "datafim": "2019-08-30", "horafim
+
+________________________________________________________________________
 
 Exemplo de retorno da API:
 
 Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: { "0": { "msgid": "1htNLA-0007eW-SP", "email_de": "nfe@seudominio.com.br", "email_para": "joao@gmail.com", "data": "01/08/2019", "hora": "23:30:47", "status": "Entregue com sucesso" }, "1": { "msgid": "1htKEX-0003Ef-0G", "email_de": "nfe@seudominio.com.br", "email_para": "roberto@hotmail.com", "data": "01/08/2019", "hora": "20:11:43", "status": "Entregue com sucesso" } }
 
+________________________________________________________________________
+
 Quando ocorrer erro na informação dos parâmetros, resultará em mensagem de erro:
 
 ex: {"0":{"status":"ERRO: FALTAM PARAMETROS","codigo":"208"}}
+
+________________________________________________________________________
 
 Códigos e erros:
 
@@ -132,6 +148,7 @@ Códigos e erros:
 {"0":{"status":"ERRO - HORA COM FORMATO INCORRETO - formato deve ser HH:MM","codigo":"211"}} Hora fornecida com formato incorreto. Informe a hora no formato solicitado: HH:MM (horas:minutos) ex: 12:02
 
 Atenção! Os relatórios de envios são atualizados aprox. a cada 15 minutos. Ao realizar um envio, caso não o veja em seguida no painel, basta aguardar a atualização.
+________________________________________________________________________
 
 ===============================================================
 
