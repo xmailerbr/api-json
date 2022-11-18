@@ -1,5 +1,5 @@
 <?php
-/////exemplo de envio php com API JSON MailGrid
+/////exemplo de envio php com API JSON xMailer
 $url = "https://api.xmailer.com.br/";
 
 $curl = curl_init($url);
@@ -13,7 +13,7 @@ $headers = array(
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
-//Informe os dados fornecidos em sua conta MailGrid, como host, usuário e senha.
+//Informe os dados fornecidos em sua conta xMailer, como host, usuário e senha.
 //Informe o remetente da mensagem (email e nome)
 $data = <<<DATA
 {"host_smtp": "HOST-SMTP","usuario_smtp": "USUARIO-SMTP", "senha_smtp": "SENHA-SMTP", "emailRemetente": "EMAIL-REMETENTE", "nomeRemetente": "NOME-REMETENTE","emailDestino": ["postmaster@xmailer.com.br","dev@xmailer.com.br"], "assunto": "Teste de envio via API JSON",
