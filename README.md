@@ -35,13 +35,13 @@ nomeRemetente (Nome do remetente) - Opcional
 
 emailReply (Email de resposta) - Opcional
 
-emailDestino (Array com emails para onde será enviada a mensagem) - Obrigatório
+emailDestino (Array com emails para onde será enviada a mensagem - máx. 30 contatos por chamada) - Obrigatório
 
 nomeDestino (Nome do destinatário) - Opcional
 
-emailDestinoCopia (Array com email para onde será copiada a mensagem) - Opcional
+emailDestinoCopia (Array com email para onde será copiada a mensagem - máx. 30 contatos por chamada) - Opcional
 
-emailDestinoCopiaOculta (Array com email para onde será copiada a mensagem de forma oculta) - Opcional
+emailDestinoCopiaOculta (Array com email para onde será copiada a mensagem de forma oculta - máx. 30 contatos por chamada) - Opcional
 
 assunto (Assunto da mensagem) - Obrigatório
 
