@@ -35,13 +35,13 @@ nomeRemetente (Nome do remetente) - Opcional
 
 emailReply (Email de resposta) - Opcional
 
-emailDestino (Array com emails para onde será enviada a mensagem - máx. 30 contatos por chamada) - Obrigatório
+emailDestino (Array com emails para onde será enviada a mensagem - máx. 100 contatos por chamada) - Obrigatório
 
 nomeDestino (Nome do destinatário) - Opcional
 
-emailDestinoCopia (Array com email para onde será copiada a mensagem - máx. 30 contatos por chamada) - Opcional
+emailDestinoCopia (Array com email para onde será copiada a mensagem - máx. 50 contatos por chamada) - Opcional
 
-emailDestinoCopiaOculta (Array com email para onde será copiada a mensagem de forma oculta - máx. 30 contatos por chamada) - Opcional
+emailDestinoCopiaOculta (Array com email para onde será copiada a mensagem de forma oculta - máx. 50 contatos por chamada) - Opcional
 
 assunto (Assunto da mensagem) - Obrigatório
 
@@ -76,6 +76,10 @@ Caso a API retorne o erro “FALTAM PARAMETROS”, ex:
 {"status":"ERRO: FALTAM PARAMETROS","codigo":"208"}
 
 Isso quer dizer que um ou mais parâmetros não foram passados corretamente via POST e codificados em JSON.
+
+________________________________________________________________________
+
+O tamanho total da mensagem não deve exceder 20 MB. Isso inclui a mensagem em si, os cabeçalhos e o tamanho combinado de quaisquer anexos.
 
 ________________________________________________________________________
 
