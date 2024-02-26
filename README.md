@@ -8,7 +8,7 @@ Bem-vindo ao guia de referências da API de envio SMTP! É através desta API qu
 
 ENDPOINT PARA ENVIO
 
-A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.xmailer.com.br/api/send/</b>
+A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.xmailer.com.br/send/</b>
 
 Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST
@@ -127,7 +127,7 @@ ENDPOINT PARA OBTER RELATÓRIO DE ENVIOS
 
 Use para obter relatório dos envios realizados
 
-A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.xmailer.com.br/api/report/</b>
+A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.xmailer.com.br/report/</b>
 
 Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST, codificados em JSON
@@ -194,7 +194,7 @@ RELATÓRIO CONSOLIDADO
 
 Use para obter relatório dos envios realizados
 
-A primeira coisa que você deve saber é o endpoint que usamos: https://api.xmailer.com.br/api/consolidate/
+A primeira coisa que você deve saber é o endpoint que usamos: https://api.xmailer.com.br/consolidate/
 
 Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST, codificados em JSON
