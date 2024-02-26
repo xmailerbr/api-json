@@ -1,4 +1,4 @@
-var url = "https://api.xmailer.com.br/";
+var url = "https://api.xmailer.com.br/send/";
 
 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
 httpRequest.Method = "POST";
