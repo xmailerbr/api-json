@@ -1,6 +1,6 @@
 <?php
 ////////////////
-$url = "https://api.xmailer.com.br/report.php";
+$url = "https://api.xmailer.com.br/report/";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);

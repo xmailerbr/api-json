@@ -1,6 +1,6 @@
 <?php
 /////exemplo de envio php com API JSON xMailer
-$url = "https://api.xmailer.com.br/";
+$url = "https://api.xmailer.com.br/send/";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);

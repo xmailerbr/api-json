@@ -1,4 +1,4 @@
-URL url = new URL("https://api.xmailer.com.br/");
+URL url = new URL("https://api.xmailer.com.br/send/");
 HttpURLConnection http = (HttpURLConnection)url.openConnection();
 http.setRequestMethod("POST");
 http.setDoOutput(true);
@@ -14,3 +14,4 @@ stream.write(out);
 
 System.out.println(http.getResponseCode() + " " + http.getResponseMessage());
 http.disconnect();
+

@@ -1,4 +1,4 @@
-URL url = new URL("https://api.xmailer.com.br/report.php");
+URL url = new URL("https://api.xmailer.com.br/report/");
 HttpURLConnection http = (HttpURLConnection)url.openConnection();
 http.setRequestMethod("POST");
 http.setDoOutput(true);

@@ -1,4 +1,4 @@
-var url = "https://api.xmailer.com.br/report.php";
+var url = "https://api.xmailer.com.br/report/";
 
 var httpRequest = (HttpWebRequest)WebRequest.Create(url);
 httpRequest.Method = "POST";

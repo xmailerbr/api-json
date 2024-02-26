@@ -1,7 +1,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "https://api.xmailer.com.br/"
+url = "https://api.xmailer.com.br/send/"
 
 headers = CaseInsensitiveDict()
 headers["Authorization"] = "Content-Type: application/json"
@@ -16,3 +16,4 @@ data = """
 resp = requests.post(url, headers=headers, data=data)
 
 print(resp.status_code)
+

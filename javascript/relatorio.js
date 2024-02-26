@@ -1,4 +1,4 @@
-var url = "https://api.xmailer.com.br/report.php";
+var url = "https://api.xmailer.com.br/report/";
 
 var xhr = new XMLHttpRequest();
 xhr.open("POST", url);

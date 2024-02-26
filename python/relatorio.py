@@ -1,7 +1,7 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-url = "https://api.xmailer.com.br/report.php"
+url = "https://api.xmailer.com.br/report/"
 
 headers = CaseInsensitiveDict()
 headers["Authorization"] = "Content-Type: application/json"
