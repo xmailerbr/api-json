@@ -9,15 +9,18 @@ Bem-vindo ao guia de referências da API de envio SMTP! É através desta API qu
 <h3>ENDPOINT PARA ENVIO</h3>
 
 A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.xmailer.com.br/send/</b>
-<li>
-Também é possível usar o protocolo http caso prefira.
-</li>
-<li>
-As chamadas da API devem ser feitas em POST.
-</li>
-<li>
-Máx. 10 chamadas simultâneas, por segundo.
-</li>
+<ul>
+  <li>
+  Também é possível usar o protocolo http caso prefira.
+  </li>
+  <li>
+  As chamadas da API devem ser feitas em POST.
+  </li>
+  <li>
+  Máx. 10 chamadas simultâneas, por segundo.
+  </li>
+</ul>
+
 ///////////////////////////////////////////////////////////////////////
 
 <h3>INFORMAÇÕES ADICIONAIS</h3>
