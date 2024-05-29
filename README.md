@@ -129,11 +129,11 @@ Exemplo de chamada para envio:
 {
   "0":
     {
-    "status": "MSG ENVIADA",
-    "codigo": "200",
-    "id": "1rDPyZ-0006kJ-2N",
-    "criptokey": "67bb60dc8c61c2c807c53a97c781176a",
-    "to": "postmaster@xmailer.com.br"
+      "status": "MSG ENVIADA",
+      "codigo": "200",
+      "id": "1rDPyZ-0006kJ-2N",
+      "criptokey": "67bb60dc8c61c2c807c53a97c781176a",
+      "to": "postmaster@xmailer.com.br"
     }
 }
 ```
@@ -229,11 +229,11 @@ Atenção: Os dados devem ser passados via POST, codificados em JSON. Não esque
 ```
 {
   "usuario_smtp": "smtp1@seudominio.com.br",
-   "senha_smtp": "xxxxxxxx",
+  "senha_smtp": "xxxxxxxx",
   "dataini": "2023-02-01",
   "horaini": "00:01",
   "datafim": "2023-08-30",
-   "horafim": "00:01"
+  "horafim": "00:01"
 }
 ```
 
