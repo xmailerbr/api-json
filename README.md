@@ -14,13 +14,13 @@ Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST
 ///////////////////////////////////////////////////////////////////////
 
-INFORMAÇÕES ADICIONAIS
+<h3>INFORMAÇÕES ADICIONAIS</h3>
 
 Todos os envios são realizados na API pela porta 587 SMTP.
 Os parâmetros e conteúdos passados, devem ser codificados em UTF-8.
 ///////////////////////////////////////////////////////////////////////
 
-PARÂMETROS A SEREM PASSADOS
+<h3>PARÂMETROS A SEREM PASSADOS</h3>
 
 host_smtp (Endereço do servidor SMTP) - Obrigatório
 
@@ -74,7 +74,7 @@ O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso in
 
 ///////////////////////////////////////////////////////////////////////
 
-CÓDIGOS DE RETORNO
+<h3>CÓDIGOS DE RETORNO</h3>
 
 200 MSG ENVIADA - Informa que o envio ocorreu com sucesso
 
@@ -92,7 +92,7 @@ CÓDIGOS DE RETORNO
 
 ///////////////////////////////////////////////////////////////////////
 
-EXEMPLOS DE CHAMADA E RETORNO
+<h3>EXEMPLOS DE CHAMADA E RETORNO</h3>
 
 Exemplo de chamada para envio:
 
@@ -123,7 +123,7 @@ As mensagens enviadas com sucesso são registradas automaticamente no relatório
 
 ///////////////////////////////////////////////////////////////////////
 
-ENDPOINT PARA OBTER RELATÓRIO DE ENVIOS
+<h3>ENDPOINT PARA OBTER RELATÓRIO DE ENVIOS</h3>
 
 Use para obter relatório dos envios realizados
 
@@ -133,7 +133,7 @@ Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST, codificados em JSON
 ///////////////////////////////////////////////////////////////////////
 
-PARÂMETROS
+<h3>PARÂMETROS</h3>
 
 usuario_smtp (usuário para autenticação – fornecido na abertura de conta, o mesmo utilizado para autenticação smtp) - Obrigatório
 
@@ -171,7 +171,7 @@ Quando os parâmetros forem passados corretamente, a API retornará os dados dos
 
 ///////////////////////////////////////////////////////////////////////
 
-CÓDIGOS DE RETORNO
+<h3>CÓDIGOS DE RETORNO</h3>
 
 207 ERRO: FALHA DE AUTENTICACAO - Dados de autenticação informados incorretamente (usuario e senha da conta principal)
 
@@ -185,7 +185,7 @@ Atenção! Os relatórios de envios são atualizados aprox. a cada 10 minutos. A
 
 ///////////////////////////////////////////////////////////////////////
 
-RELATÓRIO CONSOLIDADO
+<h3>RELATÓRIO CONSOLIDADO</h3>
 É através desta API que você irá integrar seu sistema ao nosso para obter o relatório consolidado dos envios realizados através de SMTP.
 
 ///////////////////////////////////////////////////////////////////////
@@ -201,7 +201,7 @@ As chamadas da API devem ser feitas em POST, codificados em JSON
 
 ///////////////////////////////////////////////////////////////////////
 
-PARÂMETROS
+<h3>PARÂMETROS</h3>
 
 usuario_smtp (usuário para autenticação – fornecido na abertura de conta, o mesmo utilizado para autenticação smtp) - Obrigatório
 
@@ -239,7 +239,7 @@ Quando os parâmetros forem passados corretamente, a API retornará os dados dos
 
 ///////////////////////////////////////////////////////////////////////
 
-CÓDIGOS DE RETORNO
+<h3>CÓDIGOS DE RETORNO</h3>
 
 207 ERRO: FALHA DE AUTENTICACAO - Dados de autenticação informados incorretamente (usuario e senha da conta principal)
 
