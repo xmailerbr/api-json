@@ -1,10 +1,12 @@
 API xMailer - JSON
 ///////////////////////////////////////////////////////////////////////
 
+
 <h2>ENVIO DE EMAILS</h2>
 Bem-vindo ao guia de referências da API de envio SMTP! É através desta API que você irá integrar seu sistema ao nosso para realizar os envios através de nosso SMTP dedicado.
 
 ///////////////////////////////////////////////////////////////////////
+
 
 <h3>ENDPOINT PARA ENVIO</h3>
 
@@ -23,14 +25,17 @@ A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.x
 
 ///////////////////////////////////////////////////////////////////////
 
+
 <h3>INFORMAÇÕES ADICIONAIS</h3>
+
 <ul>
   <li>Todos os envios são realizados na API pela porta 587 SMTP.</li>
   <li>Os parâmetros e conteúdos passados, devem ser codificados em UTF-8.</li>
 </ul>
 
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>PARÂMETROS A SEREM PASSADOS</h3>
 
 host_smtp (Endereço do servidor SMTP) - Obrigatório
@@ -84,8 +89,10 @@ Atenção: Os dados devem ser passados via POST, codificados em JSON. Não esque
 O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso inclui a mensagem em si, os cabeçalhos e o tamanho combinado de quaisquer anexos.
 
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>CÓDIGOS DE RETORNO</h3>
+
 <ul>
   <li><p>200 MSG ENVIADA - Informa que o envio ocorreu com sucesso</p></li>
   <li><p>208 FALTAM PARAMETROS - Informa que um ou mais parâmetros obrigatórios, não foi passado ou não foram passados no formato JSON</p></li>
@@ -104,7 +111,7 @@ O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso in
 
 ///////////////////////////////////////////////////////////////////////
 
-<br>
+
 <h3>EXEMPLOS DE CHAMADA E RETORNO</h3>
 
 Exemplo de chamada para envio:
@@ -131,11 +138,14 @@ As mensagens enviadas com sucesso são registradas automaticamente no relatório
 
 ///////////////////////////////////////////////////////////////////////
 
-<h2>RELATÓRIO DE EMAILS</h2>
-É através desta API que você irá integrar seu sistema ao nosso para obter relatórios dos envios realizados através de nosso SMTP dedicado.
 
+
+<h2>RELATÓRIO DE EMAILS</h2>
+
+É através desta API que você irá integrar seu sistema ao nosso para obter relatórios dos envios realizados através de nosso SMTP dedicado.
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>ENDPOINT PARA OBTER RELATÓRIO DE ENVIOS</h3>
 
 Use para obter relatório dos envios realizados
@@ -145,7 +155,8 @@ A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.x
 Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST, codificados em JSON
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>PARÂMETROS</h3>
 
 usuario_smtp (usuário para autenticação – fornecido na abertura de conta, o mesmo utilizado para autenticação smtp) - Obrigatório
@@ -183,7 +194,8 @@ Exemplo de retorno da API:
 Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: { "0": { "msgid": "1htNLA-0007eW-SP", "email_de": "nfe@seudominio.com.br", "email_para": "joao@gmail.com", "data": "01/08/2023", "hora": "23:30:47", "status": "Entregue com sucesso" }, "1": { "msgid": "1htKEX-0003Ef-0G", "email_de": "nfe@seudominio.com.br", "email_para": "roberto@hotmail.com", "data": "01/08/2023", "hora": "20:11:43", "status": "Entregue com sucesso" } }
 
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>CÓDIGOS DE RETORNO</h3>
 
 207 ERRO: FALHA DE AUTENTICACAO - Dados de autenticação informados incorretamente (usuario e senha da conta principal)
@@ -197,7 +209,7 @@ Quando os parâmetros forem passados corretamente, a API retornará os dados dos
 Atenção! Os relatórios de envios são atualizados aprox. a cada 10 minutos. Ao realizar um envio, caso não o veja em seguida no painel, basta aguardar a atualização.
 
 ///////////////////////////////////////////////////////////////////////
-<br>
+
 <h3>RELATÓRIO CONSOLIDADO</h3>
 É através desta API que você irá integrar seu sistema ao nosso para obter o relatório consolidado dos envios realizados através de SMTP.
 
@@ -213,7 +225,8 @@ Também é possível usar o protocolo http caso prefira.
 As chamadas da API devem ser feitas em POST, codificados em JSON
 
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>PARÂMETROS</h3>
 
 usuario_smtp (usuário para autenticação – fornecido na abertura de conta, o mesmo utilizado para autenticação smtp) - Obrigatório
@@ -251,7 +264,8 @@ Exemplo de retorno da API:
 Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: { "0": { "msgid": "1htNLA-0007eW-SP", "email_de": "nfe@seudominio.com.br", "email_para": "joao@gmail.com", "data": "01/08/2019", "hora": "23:30:47", "status": "Entregue com sucesso" }, "1": { "msgid": "1htKEX-0003Ef-0G", "email_de": "nfe@seudominio.com.br", "email_para": "roberto@hotmail.com", "data": "01/08/2019", "hora": "20:11:43", "status": "Entregue com sucesso" } }
 
 ///////////////////////////////////////////////////////////////////////
-<br>
+
+
 <h3>CÓDIGOS DE RETORNO</h3>
 
 207 ERRO: FALHA DE AUTENTICACAO - Dados de autenticação informados incorretamente (usuario e senha da conta principal)
