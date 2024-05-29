@@ -118,12 +118,25 @@ Exemplo de chamada para envio:
 
 { "host_smtp": "xxxxx.xmailer.com.br", "usuario_smtp": "apitestexxxxxx@xmailer.com.br", "senha_smtp": "xxxxxxxxxxxxxxxx", "emailRemetente": "teste@xmailer.com.br", "nomeRemetente": "xmailer", "emailDestino": ["teste@xmailer.com.br","postmaster@xmailer.com.br"], "assunto": "Teste da API json produção", "mensagemAnexos": {"file1": {"name": "pixel.jpg", "type": "image/jpeg", "content": "/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwODxAPDgwTExQUExMcGxsbHCAgICAgICAgICD/2wBDAQcHBw0MDRgQEBgaFREVGiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/wAARCAAUABQDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAf/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCNVJaAAAAAAAAH/9k="}, "file2": {"name": "pixel2.jpg", "type": "image/jpeg", "content": "/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwODxAPDgwTExQUExMcGxsbHCAgICAgICAgICD/2wBDAQcHBw0MDRgQEBgaFREVGiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/wAARCAAUABQDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAYH/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AoytOgAAAAAAAP//Z"}}, "mensagem": "Mensagem de teste da API - Testando api de html de envio json", "mensagemTipo": "html", "mensagemEncoding": "base64", "mensagemAlt": "mensagem de teste da API json" }
 
-Exemplo de retorno em JSON:
+<h4>Exemplo de retorno em JSON:</h4>
+<ul>
+  <li>
+  Quando a mensagem for enviada com sucesso:
+  </li>
+</ul>
 
-Quando a mensagem for enviada com sucesso:
-
-{ "0": { "status": "MSG ENVIADA", "codigo": "200", "id": "1rDPyZ-0006kJ-2N", "criptokey": "67bb60dc8c61c2c807c53a97c781176a", "to": "postmaster@xmailer.com.br" } }
-
+```
+{
+  "0":
+    {
+    "status": "MSG ENVIADA",
+    "codigo": "200",
+    "id": "1rDPyZ-0006kJ-2N",
+    "criptokey": "67bb60dc8c61c2c807c53a97c781176a",
+    "to": "postmaster@xmailer.com.br"
+    }
+}
+```
 Quando ocorrer erro no envio, retornará o erro:
 
 { "status": "ERRO DE ENVIO", "codigo": "204", "criptokey": "f87e7bf77c609d9537e146fb32d88418", "to": "seunome@seuemail.com" }
