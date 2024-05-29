@@ -6,7 +6,7 @@ Bem-vindo ao guia de referências da API de envio SMTP! É através desta API qu
 
 ///////////////////////////////////////////////////////////////////////
 
-ENDPOINT PARA ENVIO
+<h3>ENDPOINT PARA ENVIO</h3>
 
 A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.xmailer.com.br/send/</b>
 
