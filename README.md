@@ -137,13 +137,33 @@ Exemplo de chamada para envio:
     }
 }
 ```
-Quando ocorrer erro no envio, retornará o erro:
+<ul>
+  <li>
+    Quando ocorrer erro no envio, retornará o erro:
+  </li>
+</ul>
 
-{ "status": "ERRO DE ENVIO", "codigo": "204", "criptokey": "f87e7bf77c609d9537e146fb32d88418", "to": "seunome@seuemail.com" }
+```
+{
+  "status":"ERRO DE ENVIO",
+  "codigo": "204",
+  "criptokey":
+  "f87e7bf77c609d9537e146fb32d88418",
+  "to": "seunome@seuemail.com"
+}
+```
+<ul>
+  <li>
+    Caso a API retorne o erro “FALTAM PARAMETROS”, ex:
+  </li>
+</ul>
 
-Caso a API retorne o erro “FALTAM PARAMETROS”, ex:
-
-{"status":"ERRO: FALTAM PARAMETROS","codigo":"208"}
+```
+{
+  "status": "ERRO: FALTAM PARAMETROS",
+  "codigo":"208"
+}
+```
 
 Isso quer dizer que um ou mais parâmetros não foram passados corretamente via POST e codificados em JSON.
 
@@ -198,14 +218,55 @@ Atenção: Os dados devem ser passados via POST, codificados em JSON. Não esque
 
 ///////////////////////////////////////////////////////////////////////
 
-Exemplo de chamada em JSON:
+<h4>Exemplo de chamada em JSON:</h4>
 
-Substitua os valores conforme os dados da sua conta e período desejado para consulta. { "usuario_smtp": "smtp1@seudominio.com.br", "senha_smtp": "xxxxxxxx", "dataini": "2023-02-01", "horaini": "00:01", "datafim": "2023-08-30", "horafim": "00:01" }
+<ul>
+  <li>
+    Substitua os valores conforme os dados da sua conta e período desejado para consulta. 
+  </li>
+</ul>
 
-Exemplo de retorno da API:
+```
+{
+  "usuario_smtp": "smtp1@seudominio.com.br",
+   "senha_smtp": "xxxxxxxx",
+  "dataini": "2023-02-01",
+  "horaini": "00:01",
+  "datafim": "2023-08-30",
+   "horafim": "00:01"
+}
+```
 
-Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: { "0": { "msgid": "1htNLA-0007eW-SP", "email_de": "nfe@seudominio.com.br", "email_para": "joao@gmail.com", "data": "01/08/2023", "hora": "23:30:47", "status": "Entregue com sucesso" }, "1": { "msgid": "1htKEX-0003Ef-0G", "email_de": "nfe@seudominio.com.br", "email_para": "roberto@hotmail.com", "data": "01/08/2023", "hora": "20:11:43", "status": "Entregue com sucesso" } }
+<h4>Exemplo de retorno da API: </h4>
 
+<ul>
+  <li>
+    Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: 
+  </li>
+</ul>
+
+```
+{
+"0":
+  {
+    "msgid": "1htNLA-0007eW-SP",
+    "email_de": "nfe@seudominio.com.br",
+    "email_para": "joao@gmail.com",
+    "data": "01/08/2023",
+    "hora": "23:30:47",
+    "status": "Entregue com sucesso"
+  },
+  "1":
+  {
+    "msgid": "1htKEX-0003Ef-0G",
+    "email_de": "nfe@seudominio.com.br",
+    "email_para": "roberto@hotmail.com",
+    "data": "01/08/2023",
+    "hora": "20:11:43",
+    "status": "Entregue com sucesso"
+  }
+}
+```
 ///////////////////////////////////////////////////////////////////////
 
 
@@ -266,16 +327,55 @@ Atenção: Os dados devem ser passados via POST, codificados em JSON. Não esque
 
 ///////////////////////////////////////////////////////////////////////
 
-Exemplo de chamada em JSON:
+<h4>Exemplo de chamada em JSON:</h4>
 
-Substitua os valores conforme os dados da sua conta e período desejado para consulta.
+<ul>
+  <li>
+    Substitua os valores conforme os dados da sua conta e período desejado para consulta.
+  </li>
+</ul>
 
-{ "usuario_smtp": "smtp1@seudominio.com.br", "senha_smtp": "xxxxxxxx", "dataini": "2023-02-01", "horaini": "00:01", "datafim": "2023-08-30", "horafim: "23:59" }
+```
+{
+  "usuario_smtp": "smtp1@seudominio.com.br",
+  "senha_smtp": "xxxxxxxx",
+  "dataini": "2023-02-01",
+  "horaini": "00:01",
+  "datafim": "2023-08-30",
+  "horafim: "23:59"
+}
+```
 
-Exemplo de retorno da API:
+<h4>Exemplo de retorno da API:</h4>
 
-Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: { "0": { "msgid": "1htNLA-0007eW-SP", "email_de": "nfe@seudominio.com.br", "email_para": "joao@gmail.com", "data": "01/08/2019", "hora": "23:30:47", "status": "Entregue com sucesso" }, "1": { "msgid": "1htKEX-0003Ef-0G", "email_de": "nfe@seudominio.com.br", "email_para": "roberto@hotmail.com", "data": "01/08/2019", "hora": "20:11:43", "status": "Entregue com sucesso" } }
+<ul>
+  <li>
+    Quando os parâmetros forem passados corretamente, a API retornará os dados dos envios, no período selecionado. Ex: 
+  </li>
+</ul>
 
+```
+{
+  "0":
+    {
+      "msgid": "1htNLA-0007eW-SP",
+      "email_de": "nfe@seudominio.com.br",
+      "email_para": "joao@gmail.com",
+      "data": "01/08/2019",
+      "hora": "23:30:47",
+      "status": "Entregue com sucesso"
+    },
+  "1":
+    {
+      "msgid": "1htKEX-0003Ef-0G",
+      "email_de": "nfe@seudominio.com.br",
+      "email_para": "roberto@hotmail.com",
+      "data": "01/08/2019",
+      "hora": "20:11:43",
+      "status": "Entregue com sucesso"
+    }
+}
+```
 ///////////////////////////////////////////////////////////////////////
 
 
