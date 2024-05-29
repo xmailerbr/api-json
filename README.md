@@ -88,19 +88,19 @@ O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso in
 
 <h3>CÓDIGOS DE RETORNO</h3>
 <ul>
-  <li>200 MSG ENVIADA - Informa que o envio ocorreu com sucesso</li>
-  <li>208 FALTAM PARAMETROS - Informa que um ou mais parâmetros obrigatórios, não foi passado ou não foram passados no formato JSON</li>
-  <li>204 ERRO DE ENVIO - Ocorre quando houve erro no envio, ocasionado por falha de conexão SMTP</li>
-  <li>207 ERRO: FALHA DE AUTENTICACAO - Ocorre quando forem passados dados incorretos de autenticação SMTP</li>
-  <li>211 ERRO: ENCODING INVALIDO - Ocorre quando for passado o parâmetro demensagemEncoding de forma incorreta ou formato inválido</li>
-  <li>212 ERRO: TIPO INVALIDO - Ocorre quando for passado o parâmetro mensagemTipo de forma incorreta ou formato inválido</li>
-  <li>215 ERRO: TAMANHO EXCEDIDO - Ocorre quando o tamanho total da mensagem, incluindo anexos, exceder o limite do plano</li>
-  <li>221 ERRO: LIMITE DE CONTATOS EXCEDIDO - Parâmetro emailDestino - Ocorre quando o limite de contatos no campo emailDestino, por chamada, é excedido.</li>
-  <li>222 ERRO: LIMITE DE CONTATOS EXCEDIDO - parametro emailDestinoCopia - Ocorre quando o limite de contatos no campo emailDestinoCopia, por chamada, é excedido</li>
-  <li>223 ERRO: LIMITE DE CONTATOS EXCEDIDO - parametro emailDestinoCopiaOculta - Ocorre quando o limite de contatos no campo emailDestinoCopiaOculta, por chamada, é excedido</li>
-  <li>227 ERRO: FORMATO INCORRETO - parametro emailDestino - deve ser formato array</li>
-  <li>228 ERRO: FORMATO INCORRETO - parametro emailDestinoCopia - deve ser formato array</li>
-  <li>229 ERRO: FORMATO INCORRETO - parametro emailDestinoCopiaOculta - deve ser formato array</li>
+  <li><p>200 MSG ENVIADA - Informa que o envio ocorreu com sucesso</p></li>
+  <li><p>208 FALTAM PARAMETROS - Informa que um ou mais parâmetros obrigatórios, não foi passado ou não foram passados no formato JSON</p></li>
+  <li><p>204 ERRO DE ENVIO - Ocorre quando houve erro no envio, ocasionado por falha de conexão SMTP</p></li>
+  <li><p>207 ERRO: FALHA DE AUTENTICACAO - Ocorre quando forem passados dados incorretos de autenticação SMTP</p></li>
+  <li><p>211 ERRO: ENCODING INVALIDO - Ocorre quando for passado o parâmetro demensagemEncoding de forma incorreta ou formato inválido</p></li>
+  <li><p>212 ERRO: TIPO INVALIDO - Ocorre quando for passado o parâmetro mensagemTipo de forma incorreta ou formato inválido</p></li>
+  <li><p>215 ERRO: TAMANHO EXCEDIDO - Ocorre quando o tamanho total da mensagem, incluindo anexos, exceder o limite do plano</p></li>
+  <li><p>221 ERRO: LIMITE DE CONTATOS EXCEDIDO - Parâmetro emailDestino - Ocorre quando o limite de contatos no campo emailDestino, por chamada, é excedido</p></li>
+  <li><p>222 ERRO: LIMITE DE CONTATOS EXCEDIDO - parametro emailDestinoCopia - Ocorre quando o limite de contatos no campo emailDestinoCopia, por chamada, é excedido</p></li>
+  <li><p>223 ERRO: LIMITE DE CONTATOS EXCEDIDO - parametro emailDestinoCopiaOculta - Ocorre quando o limite de contatos no campo emailDestinoCopiaOculta, por chamada, é excedido</p></li>
+  <li><p>227 ERRO: FORMATO INCORRETO - parametro emailDestino - deve ser formato array</p></li>
+  <li><p>228 ERRO: FORMATO INCORRETO - parametro emailDestinoCopia - deve ser formato array</p></li>
+  <li><p>229 ERRO: FORMATO INCORRETO - parametro emailDestinoCopiaOculta - deve ser formato array</p></li>
 </ul>
 
 ///////////////////////////////////////////////////////////////////////
