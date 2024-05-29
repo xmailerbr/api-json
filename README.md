@@ -24,9 +24,12 @@ A primeira coisa que você deve saber é o endpoint que usamos: <b>https://api.x
 ///////////////////////////////////////////////////////////////////////
 
 <h3>INFORMAÇÕES ADICIONAIS</h3>
+<ul>
+  <li>Todos os envios são realizados na API pela porta 587 SMTP.</li>
+  <li>Os parâmetros e conteúdos passados, devem ser codificados em UTF-8.</li>
+</ul>
 
-Todos os envios são realizados na API pela porta 587 SMTP.
-Os parâmetros e conteúdos passados, devem ser codificados em UTF-8.
+
 ///////////////////////////////////////////////////////////////////////
 
 <h3>PARÂMETROS A SEREM PASSADOS</h3>
@@ -84,22 +87,24 @@ O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso in
 ///////////////////////////////////////////////////////////////////////
 
 <h3>CÓDIGOS DE RETORNO</h3>
-
-200 MSG ENVIADA - Informa que o envio ocorreu com sucesso
-
-208 FALTAM PARAMETROS - Informa que um ou mais parâmetros obrigatórios, não foi passado ou não foram passados no formato JSON
-
-204 ERRO DE ENVIO - Ocorre quando houve erro no envio, ocasionado por falha de conexão SMTP
-
-207 ERRO: FALHA DE AUTENTICACAO - Ocorre quando forem passados dados incorretos de autenticação SMTP
-
-211 ERRO: ENCODING INVALIDO - Ocorre quando for passado o parâmetro demensagemEncoding de forma incorreta ou formato inválido
-
-212 ERRO: TIPO INVALIDO - Ocorre quando for passado o parâmetro mensagemTipo de forma incorreta ou formato inválido
-
-215 ERRO: TAMANHO EXCEDIDO - Ocorre quando o tamanho total da mensagem, incluindo anexos, exceder o limite do plano
+<ul>
+  <li>200 MSG ENVIADA - Informa que o envio ocorreu com sucesso</li>
+  <li>208 FALTAM PARAMETROS - Informa que um ou mais parâmetros obrigatórios, não foi passado ou não foram passados no formato JSON</li>
+  <li>204 ERRO DE ENVIO - Ocorre quando houve erro no envio, ocasionado por falha de conexão SMTP</li>
+  <li>207 ERRO: FALHA DE AUTENTICACAO - Ocorre quando forem passados dados incorretos de autenticação SMTP</li>
+  <li>211 ERRO: ENCODING INVALIDO - Ocorre quando for passado o parâmetro demensagemEncoding de forma incorreta ou formato inválido</li>
+  <li>212 ERRO: TIPO INVALIDO - Ocorre quando for passado o parâmetro mensagemTipo de forma incorreta ou formato inválido</li>
+  <li>215 ERRO: TAMANHO EXCEDIDO - Ocorre quando o tamanho total da mensagem, incluindo anexos, exceder o limite do plano</li>
+  <li>221 ERRO: LIMITE DE CONTATOS EXCEDIDO - Parâmetro emailDestino - Ocorre quando o limite de contatos no campo emailDestino, por chamada, é excedido.</li>
+  <li>222 ERRO: LIMITE DE CONTATOS EXCEDIDO - parametro emailDestinoCopia - Ocorre quando o limite de contatos no campo emailDestinoCopia, por chamada, é excedido</li>
+  <li>223 ERRO: LIMITE DE CONTATOS EXCEDIDO - parametro emailDestinoCopiaOculta - Ocorre quando o limite de contatos no campo emailDestinoCopiaOculta, por chamada, é excedido</li>
+  <li>227 ERRO: FORMATO INCORRETO - parametro emailDestino - deve ser formato array</li>
+  <li>228 ERRO: FORMATO INCORRETO - parametro emailDestinoCopia - deve ser formato array</li>
+  <li>229 ERRO: FORMATO INCORRETO - parametro emailDestinoCopiaOculta - deve ser formato array</li>
+</ul>
 
 ///////////////////////////////////////////////////////////////////////
+
 
 <h3>EXEMPLOS DE CHAMADA E RETORNO</h3>
 
