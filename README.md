@@ -107,6 +107,7 @@ O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso in
   <li><p>227 ERRO: FORMATO INCORRETO - parametro emailDestino - deve ser formato array</p></li>
   <li><p>228 ERRO: FORMATO INCORRETO - parametro emailDestinoCopia - deve ser formato array</p></li>
   <li><p>229 ERRO: FORMATO INCORRETO - parametro emailDestinoCopiaOculta - deve ser formato array</p></li>
+  <li><p>230 ERRO: HOST INVALIDO - parametro host_smtp so pode conter hosts da xMailer</p></li>
 </ul>
 
 ///////////////////////////////////////////////////////////////////////
