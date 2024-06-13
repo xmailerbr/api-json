@@ -108,6 +108,7 @@ O tamanho total da mensagem (incluindo anexos) não deve exceder 50 MB. Isso in
   <li><p>228 ERRO: FORMATO INCORRETO - parametro emailDestinoCopia - deve ser formato array</p></li>
   <li><p>229 ERRO: FORMATO INCORRETO - parametro emailDestinoCopiaOculta - deve ser formato array</p></li>
   <li><p>230 ERRO: HOST INVALIDO - parametro host_smtp so pode conter hosts da xMailer</p></li>
+  <li><p>Metodo nao permitido. Verifique a URL correta na documentacao. Use POST. - Você deve usar o método POST para consumir a API.</p></li>
 </ul>
 
 ///////////////////////////////////////////////////////////////////////
@@ -280,6 +281,8 @@ Atenção: Os dados devem ser passados via POST, codificados em JSON. Não esque
 210 ERRO: DATA COM FORMATO INCORRETO - Data para pesquisa, informada incorretamente - use somente formato YYYY-MM-DD
 
 211 ERRO: HORA COM FORMATO INCORRETO - Hora para pesquisa, informada incorretamente - use somente formato HH:MM
+
+<li><p>Metodo nao permitido. Verifique a URL correta na documentacao. Use POST. - Você deve usar o método POST para consumir a API.</p></li>
 
 Atenção! Os relatórios de envios são atualizados aprox. a cada 10 minutos. Ao realizar um envio, caso não o veja em seguida no painel, basta aguardar a atualização.
 
