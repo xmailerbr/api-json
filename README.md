@@ -1,4 +1,4 @@
-<h2>XMailer API – Exemplos de Integração</h2>
+<h2>xMailer API – Exemplos de Integração</h2>
 
 Este repositório contém exemplos de uso da API JSON da XMailer em diversas linguagens de programação, com o objetivo de facilitar a integração aos seus sistemas.
 
