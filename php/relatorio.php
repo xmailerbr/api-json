@@ -1,5 +1,5 @@
 <?php
-////////////////
+
 // Defina a URL da API do Xmailer para obter relatórios
 $url = "https://api.xmailer.com.br/report/";
 
@@ -17,7 +17,6 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 // Define os cabeçalhos HTTP para a requisição
 $headers = array(
-   "Authorization: Content-Type: application/json", // Cabeçalho de autorização (se necessário)
    "Content-Type: application/json", // Especifica que o corpo da requisição está em JSON
 );
 
@@ -26,7 +25,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 // Dados que serão enviados no corpo da requisição, em formato JSON.
 // O JSON contém informações sobre o usuário, a senha e o intervalo de tempo para o relatório.
-$data = '{"usuario_smtp": "USUARIO-SMTP", "senha_smtp": "SENHA-SMTP", "dataini": "2022-09-27", "horaini": "00:01", "datafim": "2022-09-27", "horafim": "23:59"}';
+$data = '{"token_auth": "INFORME-O-TOKEN-AQUI", "dataini": "2022-09-27", "horaini": "00:01", "datafim": "2022-09-27", "horafim": "23:59"}';
 
 // Define os dados do corpo da requisição POST
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
