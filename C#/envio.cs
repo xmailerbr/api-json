@@ -17,7 +17,6 @@ class Program
             httpRequest.Method = "POST";
 
             // Definindo os cabeçalhos da requisição
-            httpRequest.Headers["Authorization"] = "Bearer SEU_TOKEN"; // Corrigido para Bearer Token (se necessário)
             httpRequest.ContentType = "application/json"; // Especificando o tipo do conteúdo
 
             // Dados da requisição, que serão enviados no corpo da requisição
