@@ -29,7 +29,6 @@ public class SendEmailViaAPI {
             // Configurando a requisição HTTP
             httpConnection.setRequestMethod("POST");
             httpConnection.setDoOutput(true); // Habilita o envio de dados no corpo da requisição
-            httpConnection.setRequestProperty("Authorization", "Bearer YOUR_AUTH_TOKEN"); // Cabeçalho de autenticação (substitua YOUR_AUTH_TOKEN)
             httpConnection.setRequestProperty("Content-Type", "application/json");
 
             // Convertendo os dados JSON para um array de bytes
