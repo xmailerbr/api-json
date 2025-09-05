@@ -8,7 +8,7 @@ class Program
     static void Main()
     {
         // URL do endpoint da API
-        var url = "https://api.xmailer.com.br/send/";
+        var url = "https://api.xmailer.com.br/sendmail/";
 
         try
         {
