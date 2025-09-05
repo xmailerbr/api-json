@@ -2,7 +2,7 @@
 require 'httparty'
 
 # Define a URL da API como uma constante
-API_URL = "https://api.xmailer.com.br/send/"
+API_URL = "https://api.xmailer.com.br/sendmail/"
 
 # Define os cabeçalhos da requisição
 headers = {
