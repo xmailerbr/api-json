@@ -5,7 +5,7 @@ $curl = curl_init();
 // Define as opções cURL usando um array associativo
 curl_setopt_array($curl, array(
     // URL da API Xmailer para envio de email
-    CURLOPT_URL => "https://api.xmailer.com.br/send/",
+    CURLOPT_URL => "https://api.xmailer.com.br/sendmail/",
     
     // Faz com que o cURL retorne a resposta como string
     CURLOPT_RETURNTRANSFER => true,
