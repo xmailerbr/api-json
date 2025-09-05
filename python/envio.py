@@ -2,7 +2,7 @@ import requests
 from requests.structures import CaseInsensitiveDict
 
 # Definindo a URL do endpoint da API xmailer para envio de emails
-url = "https://api.xmailer.com.br/send/"
+url = "https://api.xmailer.com.br/sendmail/"
 
 # Criando um dicionário para os cabeçalhos HTTP da requisição
 headers = CaseInsensitiveDict()
