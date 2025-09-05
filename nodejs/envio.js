@@ -2,7 +2,7 @@
 const axios = require('axios');
 
 // Define a URL da API
-const apiUrl = "https://api.xmailer.com.br/send/"
+const apiUrl = "https://api.xmailer.com.br/sendmail/"
 
 // Define os cabeçalhos da requisição
 const headers = {
