@@ -1,6 +1,6 @@
 # Enviar um e-mail com anexos usando a API Xmailer com cURL
 
-curl --location 'https://api.xmailer.com.br/send/' \  # Endpoint da API para envio de e-mails
+curl --location 'https://api.xmailer.com.br/sendmail/' \  # Endpoint da API para envio de e-mails
   --header 'Content-Type: application/json' \  # Define o cabeçalho para indicar que o corpo da requisição é em JSON
   --data-raw '{
     "host_smtp": "HOST-SMTP",  # Substitua pelo host SMTP do serviço de e-mail
