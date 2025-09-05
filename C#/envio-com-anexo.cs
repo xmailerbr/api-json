@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 class Program
 {
     // URL do endpoint da API
-    private static readonly string apiUrl = "https://api.xmailer.com.br/send/";
+    private static readonly string apiUrl = "https://api.xmailer.com.br/sendmail/";
 
     // Método principal assíncrono
     static async Task Main(string[] args)
