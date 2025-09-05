@@ -2,7 +2,7 @@
 ///// Exemplo de envio PHP com API JSON Xmailer
 
 // Define a URL da API do Xmailer
-$url = "https://api.xmailer.com.br/send/";
+$url = "https://api.xmailer.com.br/sendmail/";
 
 // Inicializa a sessão cURL com a URL da API
 $curl = curl_init($url);
