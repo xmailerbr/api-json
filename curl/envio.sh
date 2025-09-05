@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Defina a URL da API de envio de e-mail
-API_URL="https://api.xmailer.com.br/send/"
+API_URL="https://api.xmailer.com.br/sendmail/"
 
 # Defina os parâmetros de autenticação e envio do e-mail
 HOST_SMTP="HOST-SMTP"  # Substitua pelo seu host SMTP
