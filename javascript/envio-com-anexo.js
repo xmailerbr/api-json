@@ -1,5 +1,5 @@
 // URL do endpoint da API para envio de e-mail
-const url = "https://api.xmailer.com.br/send/";
+const url = "https://api.xmailer.com.br/sendmail/";
 
 // Definição dos dados que serão enviados na requisição (e-mail, anexos, etc)
 const data = JSON.stringify({
