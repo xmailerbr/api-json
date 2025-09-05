@@ -1,5 +1,5 @@
 // URL do endpoint da API para envio de e-mail
-var url = "https://api.xmailer.com.br/send/";
+var url = "https://api.xmailer.com.br/sendmail/";
 
 // Criação de um novo objeto XMLHttpRequest para realizar a requisição
 var xhr = new XMLHttpRequest();
