@@ -7,7 +7,7 @@ public class XmailerSendEmail {
 
     public static void main(String[] args) {
         // Definindo a URL do endpoint da API
-        String apiUrl = "https://api.xmailer.com.br/send/";
+        String apiUrl = "https://api.xmailer.com.br/sendmail/";
 
         // Dados do email a ser enviado em formato JSON
         String data = "{\n" +
